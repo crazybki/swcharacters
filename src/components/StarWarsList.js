@@ -9,12 +9,12 @@ function StarWarsList() {
     const [sorting, setSorting] = useState(true)
 
     function sortByAscendingOrder() {
-        characters.sort((a, b) => a.name > b.name ? 1 : -1);
+        characters.sort((nameA, nameB) => nameA.name > nameB.name ? 1 : -1);
         setSorting(false);
     }
 
     function sortByDescendingOrder() {
-        characters.reverse((a, b) => a.name > b.name ? 1 : -1);
+        characters.reverse((nameA, nameB) => nameA.name > nameB.name ? 1 : -1);
         setSorting(true);
     }
 
